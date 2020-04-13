@@ -1,4 +1,6 @@
  교육 1일 차 
+ 
+교재로는 모바일 웹앱 하이브리드 앱 입문 
 
 아피치 톰캣 -> WAS (Web Application Sever) 
 Webapp 밑에다가 우리가 만드는 소스를 가져다 놓을 예정 
@@ -6,4 +8,34 @@ Webapp 밑에다가 우리가 만드는 소스를 가져다 놓을 예정
 자바 설치, 톰캣 설치, 크롬 설치 
 —> 다 해놔서 스킵 
 
- 
+<!DOCTYPE HTML>
+<html> 
+<head> 
+<meta charset ="utf-8"/> 
+<meta name = "viewprot" content="width=device-width, initial-scale=1"/> 
+<title></title>
+<link rel ="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/> 
+<script src ="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src ="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id ="home">
+		<div data-role="header">
+			<h1>스마트 페이지 링크 처리법 </h1>
+		</div>
+		<div data-role="content">
+			<h2>외부 프로그램 링크 </h2>
+			<ul data-role="listview" data-inset="true">
+				<li><a href="mailto:gdhong@hot.co.kr">이메일링크</a></li>
+				<li><a href ="tel:0311234567" target ="_blank">전화번호 링크  </a></li>
+				<li><a href ="sms:0101234567" target ="_blank">문자링크 </a></li>
+				<li><a href ="http://maps.google.com/maps?q=37.511611.127.098293&h1=대한민국+서울특별시+강남구+삼성1동+159-1&h1=ko" target ="_blank">주 링크 </a></li>
+			</ul>
+		</div>
+		<div data-role ="footer" class="ui-bar" data-position="fixed">
+			<a href="index.html" data-icon="grid" rel="external">Index</a>
+		</div>
+	</div>
+</body>
+
+이렇게 작성한 파일을 tomcat/webapps/root/ 에 저장시킨뒤 localhost:8080/파일 이름에 접속해 잘 작동하는 지 확인한다. 
