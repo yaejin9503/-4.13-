@@ -39,6 +39,6 @@ Webapp 밑에다가 우리가 만드는 소스를 가져다 놓을 예정
 	</div>
 </body>
 
-<img width="791" alt="스크린샷 2020-04-13 오후 12 50 24" src="https://user-images.githubusercontent.com/54971846/79090686-69f4e180-7d85-11ea-8a79-73c1e2727d81.png">
+{https://user-images.githubusercontent.com/54971846/79090686-69f4e180-7d85-11ea-8a79-73c1e2727d81.png}
 
 이렇게 작성한 파일을 tomcat/webapps/root/ 에 저장시킨뒤 localhost:8080/파일 이름에 접속해 잘 작동하는 지 확인한다. 
