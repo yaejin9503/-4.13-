@@ -40,3 +40,6 @@ Webapp 밑에다가 우리가 만드는 소스를 가져다 놓을 예정
 </body>
 
 이렇게 작성한 파일을 tomcat/webapps/root/ 에 저장시킨뒤 localhost:8080/파일 이름에 접속해 잘 작동하는 지 확인한다. 
+Http:    www.naver.com:8080/  a.html 
+Protocol              포트번호   URL
+
