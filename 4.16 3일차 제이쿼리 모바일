@@ -1,0 +1,21 @@
+제이쿼리 모바일 헤더바와 푸터바 
+<head> 태그  안에 밑에 문장을 반드시 포함시켜야 한다. 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+#헤더바 
+--> 헤더 컨테이너 영역 안에서 <a>태그는 버튼으로 자동 변환되어 표시된다. 
+
+<div data-role ="header"> <a href="#">헤더버튼</a><div> 
+
+헤더 영역 안에서 뒤로가기 버튼을 추가하고 싶다면 
+<div data-role ="header" data-add-back-btn ="true"> 로 해주고 만약 보여주고 싶지 않다면 false 로 바꾸면 된다. 
+
+헤더 영역에 뒤로가기 버튼 텍스트를 수정하고 싶다면? 
+<div data-role ="header" data-add-back-btn ="true" data-back-btn-text="이전으로"> 
+data-back-btn-text="이전으로" 이 문장을 뒤에 추가해주면 된다. 
+
+오른쪽 버튼 : <a class = "ui-btn-right">
+왼쪽 버튼 : <a class = "ut-btn-left"> 
