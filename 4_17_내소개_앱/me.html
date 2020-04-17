@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>	
+</head>
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<h1> Introuduce Me! </h1>
+		</div>
+		<div data-role="content" style="text-align:center" data-theme="b">
+			<img src="11.jpeg" width="250" height="270">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">소개</a></li>
+				<li><a href="#movie">프로젝트 영상</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog">좋아하는 음악</a></li>
+				<li><a href="#gallery" >내 갤러리</a></li>
+			</ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h3>@copyright yejin</h3>
+		</div>
+	</div>
+	<div data-role="page" id="intro" data-theme="b"> 
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음 </a>
+			<h1>내 소개  </h1>
+		</div>
+		<div data-role="content">
+			<div style="text-align:center">
+				<img src="yejin.jpeg" width="250" height="270">
+			</div>
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>인적사항</h3>
+					<p>이름 : 김예진 </br> 성별 : 여 </br> 생년월일 : 1995년 3월 28일 </br> 학력 : 한신대학교 컴퓨터 공학부 졸업 </br> 주소 : 서울시 서대문구 홍제1동 156-377</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>사용 가능한 언어</h3>
+					<p>java, javascript, jquery, html, css, python</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>프로젝트</h3>
+					<p>1,자체 은행 웹페이지제작(동영상o)<br/>2.웹 게임페이지 제작(동영상o)<br/>3.현재 웹앱개발자 교육 수강중</p>
+				</div> 
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h3>@copyright yejin</h3>
+		</div>
+	</div>
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>movie</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e"> 프로젝트1 영상 </div><br/>
+			<!-- ui-bar ui-bar-e 블록 레이아웃을 만드는 class  -->
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/QTKgiMeoelI" ></iframe></li><br/>
+			<div class="ui-bar ui-bar-e"> 프로젝트2 영상 </div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/qEgeXwVKDNE"></iframe></li>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1" data-theme="b">
+		<div data-role="header">
+			<h1>좋아하는 음악</h1>
+		</div>
+		<div data-role="content">
+			<div class='ui bar ui-bar-e'>pH-1_Nerdy Love</div>
+			<audio controls width=100% preload="metadata">
+				<source src="pH-1_Nerdy Love.mp3" type="audio/mp3">
+			</audio>
+			<img src ="nerdy_love.png" alt ="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+	<div data-role="page" id="wizard3-2" data-theme="b">
+		<div data-role="header">
+			<h1>sing2</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">Colde - 와르르 </div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="Colde_와르르.mp3" type="audio/mp3">
+			</audio>
+			<img src="colode.png" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#wizard3-1"  data-direction="reverse">이전</a>
+			<a href="#home">처음</a>
+		</div>
+	</div>
+	
+	<div data-role="page" id ="gallery" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음 </a>
+			<h1>gallery</h1>
+		</div>
+		<div data-rol="content">
+			<ul class="picture">
+				<li><a href="yejin.jpeg" rel="external"><img src="yejin.jpeg" /></a></li>
+				<li><a href="11.jpeg" rel="external"><img src="11.jpeg" /></a></li>
+				<li><a href="nerdy_love.png" rel="external"><img src="nerdy_love.png" /></a></li>
+				<li><a href="colode.png" rel="external"><img src="colode.png" /></a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h3>@copyright yejin</h3>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
