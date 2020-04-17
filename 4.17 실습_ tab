@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+	<div data-role="panel" id="panel1" data-display="overlay" data-theme="b">
+		<form>
+			<h3>login</h3>
+			<label for="name"> name:</label>
+			<input name="name" id="name" type="text" value="" data-mini="true" data-clear-btn="true">
+			<label for="password"> password</label>
+			<input name="password" id="password" type="password" value="" data-mini="true" data-clear-btn="true">        >
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><a href="#" data-role="button" data-rel="close">cancel</a></div>
+				<div class="ui-block-b"><a href="#" data-role="button" data-rel="close">save</a></div>
+			</div>
+		</form>
+	</div>
+	
+	<div data-role="panel" id="panel2" data-display="overlay">
+		<ul data-role="listview">
+			<li data-icon="delete"><a href="#" data-rel="close">메뉴 패널 종료  </a></li>
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+		</ul>
+	</div>
+	
+	 <div data-role="panel" id="panel3" data-display="overlay" data-position="right">
+        <h3>패널 메모</h3>
+        <p>오른쪽 메모 패널 영역입니다.</p>
+        <a href="#page1" data-role="button" data-rel="close" data-inline="true">패널 종료</a>
+    </div>
+	
+	<div data-role="header">
+	<h1>header area</h1>
+	</div>
+	<div data-rol="content">
+	<a href="#panel1" data-role="button" data-inline="true">login panel</a>
+	<a href="#panel2" data-role="button" data-inline="true">menu panel</a>
+	<a href="#panel3" data-role="button" data-inline="true">memo panel</a>
+	</div>
+	<div data-rol="footer" data-position="fixed">
+	<h3>footer area</h3>
+	</div>
+</div>
+
+</body>
+</html>
+
