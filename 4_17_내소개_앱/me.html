@@ -5,15 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>jQuery Mobile</title>
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <style>
-   li { list-style:none; }
+   li { list-style:none; font-family: 'Do Hyeon', sans-serif;}
   .picture { list-style:none; padding:0; margin:0; }
   .picture li { float:left; width:50%;}
   .picture li a {display:block; margin:5px; border: 1px }
   .picture li img { display:block; width:50%;  height:auto;}
   .picture li img:hover { display:block; width:100%;  height:auto;} 
+  body {
+	font-family: 'Do Hyeon', sans-serif;
+}
+
 </style>	
 </head>
 <body>
@@ -25,10 +30,10 @@
 		<div data-role="content" style="text-align:center" data-theme="b">
 			<img src="11.jpeg" width="250" height="270">
 			<ul data-role="listview" data-inset="true">
-				<li><a href="#intro">소개</a></li>
-				<li><a href="#movie">프로젝트 영상</a></li>
-				<li><a href="#wizard3-1" data-rel="dialog">좋아하는 음악</a></li>
-				<li><a href="#gallery" >내 갤러리</a></li>
+				<li><a href="#intro"><span style="font-family: Do Hyeon;">소개</a></li>
+				<li><a href="#movie"><span style="font-family: Do Hyeon;">프로젝트 영상</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog"><span style="font-family: Do Hyeon;">좋아하는 음악</a></li>
+				<li><a href="#gallery"><span style="font-family: Do Hyeon;">내 갤러리</a></li>
 			</ul>
 		</div>
 		
@@ -47,15 +52,15 @@
 			</div>
 			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
 				<div data-role="collapsible" data-collapsed="false">
-					<h3>인적사항</h3>
+					<h3><span style="font-family: Do Hyeon;">인적사항</h3>
 					<p>이름 : 김예진 </br> 성별 : 여 </br> 생년월일 : 1995년 3월 28일 </br> 학력 : 한신대학교 컴퓨터 공학부 졸업 </br> 주소 : 서울시 서대문구 홍제1동 156-377</p>
 				</div>
 				<div data-role="collapsible">
-					<h3>사용 가능한 언어</h3>
+					<h3><span style="font-family: Do Hyeon;">사용 가능한 언어</h3>
 					<p>java, javascript, jquery, html, css, python</p>
 				</div>
 				<div data-role="collapsible">
-					<h3>프로젝트</h3>
+					<h3><span style="font-family: Do Hyeon;">프로젝트</h3>
 					<p>1,자체 은행 웹페이지제작(동영상o)<br/>2.웹 게임페이지 제작(동영상o)<br/>3.현재 웹앱개발자 교육 수강중</p>
 				</div> 
 			</div>
@@ -133,30 +138,3 @@
 </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
