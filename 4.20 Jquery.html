@@ -20,6 +20,7 @@
 	$('p[id$="2"]').css({'background-color': 'purple', 'color': 'white'});		// (4)
 
 	});
+	//선태자 유형들을 
 </script>
 </head>
 <body>	
@@ -47,3 +48,9 @@
 </section>	
 </body>
 </html>
+
+
+$('#p1 + p').css('border-style', 'hidden');
+$('#p2 ~ p').css('border', 'dashed thick red');							
+$('div > div').css('border', 'solid thick green');							
+$('div span').css({'background-color': 'purple', 'color': 'white'});			
