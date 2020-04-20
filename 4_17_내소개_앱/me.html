@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 <style>
    li { list-style:none; font-family: 'Do Hyeon', sans-serif;}
   .picture { list-style:none; padding:0; margin:0; }
@@ -34,6 +35,8 @@
 				<li><a href="#movie"><span style="font-family: Do Hyeon;">프로젝트 영상</a></li>
 				<li><a href="#wizard3-1" data-rel="dialog"><span style="font-family: Do Hyeon;">좋아하는 음악</a></li>
 				<li><a href="#gallery"><span style="font-family: Do Hyeon;">내 갤러리</a></li>
+				<li><a href="#map"><span style="font-family: Do Hyeon;">상세 주소</a></li>
+
 			</ul>
 		</div>
 		
@@ -135,6 +138,45 @@
 			<h3>@copyright yejin</h3>
 		</div>
 	</div>
+	<div data-role="page" id ="map" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음 </a>
+			<h1>my address</h1>
+		</div>
+		<div data-rol="content">
+			<div id="map" style="width:400px;height:300px;"></div>
+			<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a8f6cad92d87d3728dd014dde3506a96"></script>
+			<script>
+			var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+			    mapOption = { 
+			        center: new kakao.maps.LatLng(37.5826352, 126.943553), // 지도의 중심좌표
+			        level: 3 // 지도의 확대 레벨
+			    };
+			
+			var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+			
+			// 마커가 표시될 위치입니다 
+			var markerPosition  = new kakao.maps.LatLng(37.5826352, 126.943553); 
+			
+			// 마커를 생성합니다
+			var marker = new kakao.maps.Marker({
+			    position: markerPosition
+			});
+			
+			// 마커가 지도 위에 표시되도록 설정합니다
+			marker.setMap(map);
+			
+			// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+			// marker.setMap(null);    
+			</script>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h3>@copyright yejin</h3>
+		</div>
+	</div>
 </div>
+
 </body>
 </html>
+
+
