@@ -68,6 +68,7 @@ export default App;
 
 - 삼항연산자는 true일때와 false 일 때 다른 것들을 보여주고 싶을 때 사용하는 반면, AND 연산자의 경우 단순히 우리의 
 조건이 true 일 때만 보여주고 false 일 경우 아무것도 보여주고 싶지 않을 때 사용한다. 
+
 ```
 import React, { Component } from 'react';
 
@@ -84,11 +85,13 @@ class App extends Component {
 }
 
 export default App;
+```
 
 <b>조금 복잡한 조건을 작성해야 할 때</b>
 
 - JSX 밖에서 로직을 작성하는 것이 좋지만 
 - JSX 내부에서 작성해야 한다면, 이렇게 IIFE를 사용한다. 
+
 ```
 import React, { Component } from 'react';
 
